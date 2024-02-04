@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var sessionStatus = ViewData["SessionStatus"] as string;
+}
+
+<div class="text-center">
+    <h1>Welcome, @ViewData["userFName"] @ViewData["userLName"]!</h1>
+    <p>Your password: @ViewData["UserPassword"]</p>
+    <p>Your Address: @ViewData["UserAddress"]</p>
+    <p>Your Mobile No.: @ViewData["UserMobileNo"]</p>
+    <p>@sessionStatus</p>
+</div>
